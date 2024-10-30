@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RINTERIO</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css" />
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,13 +45,11 @@
   <body class="Manrope container m-auto px-6 lg:px-24 py-8 scroll-smooth">
     <header>
       <nav class="flex justify-between items-center">
-        <h3
-          class="text-3xl font-bold text-[#212121] flex lg:items-center gap-4"
-        >
+        <h3 class="flex lg:items-center gap-4">
           <i
-            class="fa-solid fa-arrow-right p-6 bg-[#ABEF5F] w-8 h-8 rounded-full flex justify-center items-center rotate-[-45deg]"
+            class="fa-solid fa-arrow-right p-4 bg-[#ABEF5F] w-8 h-8 rounded-full flex justify-center items-center rotate-[-45deg]"
           ></i>
-          Rinterio
+          <span class="text-3xl font-bold text-[#212121]">Rinterio</span>
         </h3>
         <ul
           class="hidden lg:flex items-center gap-8 text-[1rem] font-bold text-[#212121]"
@@ -57,6 +57,11 @@
           <li>
             <a class="px-4 py-2 rounded-md hover:bg-gray-400" href="#home"
               >Home</a
+            >
+          </li>
+          <li>
+            <a class="px-4 py-2 rounded-md hover:bg-gray-400" href="#about"
+              >About</a
             >
           </li>
           <li>
@@ -93,7 +98,7 @@
         <i class="fa-solid fa-bars text-4xl lg:hidden"></i>
       </nav>
       <!-- HERO SECTION -->
-      <div class="mt-16 text-center space-y-4">
+      <div id="#home" class="mt-16 text-center space-y-4">
         <img class="m-auto" src="images/banner.png" alt="" />
         <h1 class="text-4xl lg:text-6xl font-extrabold text-[#212121]">
           A barn house of this design has a <br />
@@ -319,7 +324,105 @@
           </div>
         </div>
       </section>
+      <!-- FORM SECTION -->
+      <section id="blog" class="mt-24 img">
+        <div class="text-center space-y-4">
+          <button class="btn mt-16 bg-[#ABEF5F33]">
+            <i class="fa-solid fa-arrow-right"></i>
+            Les's Contact
+          </button>
+          <h2 class="text-3xl lg:text-4xl text-[#212121] font-bold">
+            Let’s Discuss Next Project
+          </h2>
+          <p class="text-[1rem] text-[#494949] w-[95%] lg:w-1/2 m-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <div class="mt-16 lg:grid grid-cols-2 col-span-1">
+          <!-- INPUT 1 -->
+          <div class="text-center mb-4">
+            <input
+              class="blog border-0 outline-0 py-2 px-4 rounded-3xl col-span-1"
+              type="text"
+              placeholder="Firts Name*"
+            />
+          </div>
+          <!-- INPUT 2 -->
+          <div class="text-center mb-4">
+            <input
+              class="blog border-0 outline-0 py-2 px-4 rounded-3xl col-span-1"
+              type="text"
+              placeholder="Last Name*"
+            />
+          </div>
+          <!-- INPUT 3 -->
+          <div class="text-center mb-4">
+            <input
+              class="blog border-0 outline-0 py-2 px-4 rounded-3xl col-span-1"
+              type="text"
+              placeholder="Phone Number*"
+            />
+          </div>
+          <!-- INPUT 3 -->
+          <div class="text-center mb-4">
+            <input
+              class="blog border-0 outline-0 py-2 px-4 rounded-3xl col-span-1"
+              type="text"
+              placeholder="Email Number*"
+            />
+          </div>
+          <!-- TEXT AREA -->
+          <div class="text-center col-span-2">
+            <textarea
+              class="blog rounded-3xl p-4 resize-none mb-4"
+              cols="50"
+              rows="5"
+              placeholder="Write Your Massege Here"
+            ></textarea>
+          </div>
+          <div class="text-center col-span-2">
+            <button class="btn blog rounded-3xl bg-[#ABEF5F] mb-4">
+              Send Email
+              <i
+                class="fa-solid fa-arrow-right bg-[#000] text-white w-8 h-8 rounded-full flex justify-center items-center rotate-[-45deg]"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- FOOTER SECTION -->
+    <footer id="content" class="mt-24 bg-[#1c1c1c] text-white space-y-6 py-16">
+      <div class="text-center space-y-4">
+        <h3 class="flex items-center justify-center gap-4">
+          <i
+            class="fa-solid fa-arrow-right p-4 bg-[#ABEF5F] text-[#212121] w-8 h-8 rounded-full flex justify-center items-center rotate-[-45deg]"
+          ></i>
+          <span class="text-3xl font-bold"> Rinterio</span>
+        </h3>
+        <p class="text-[1rem] font-medium w-[95%] lg:w-1/2 m-auto">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <ul class="flex gap-6 items-center justify-center">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="text-center">
+        <button class="btn rounded-3xl bg-[#ABEF5F]">
+          Book Consult
+          <i
+            class="fa-solid fa-arrow-right bg-[#212121] text-[#ABEF5F] w-8 h-8 rounded-full flex justify-center items-center rotate-[-45deg]"
+          ></i>
+        </button>
+      </div>
+    </footer>
     <!-- 
     <i
     class="fa-solid fa-arrow-right bg-[#ABEF5F] w-8 h-8 rounded-full flex justify-center items-center rotate-[-45deg]"
